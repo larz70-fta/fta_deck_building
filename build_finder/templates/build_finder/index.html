@@ -1,0 +1,22 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'build_finder/style.css' %}">
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Build Finder Index Page</title>
+  </head>
+  <body>
+    {% if latest_decks_list %}
+        <ul>
+        {% for deck in latest_decks_list %}
+            <li><a href="{% url 'build_finder:detail' deck.id %}">{{ deck.deck_name }}</a></li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No decks are available.</p>
+    {% endif %}
+  </body>
+</html>
