@@ -13,6 +13,10 @@ app_name = 'build_finder'
 urlpatterns = [
     # ex: /build_finder
     path('', views.index, name='index'),
-    # ex: /build_finder/1
-    path('<int:deck_id>/', views.detail, name='detail'),
+    # ex: /build_finder/mtgpq_deck_search
+    path('mtgpq_deck_search/', views.search, name='mtgpq_deck_search'),
+    # ex: /build_finder/DeckFinderBot
+    path('deckfinderbot/', views.search, name='deckfinderbot'),
+    # ex: /build_finder/<name of deck>
+    path('<str:deck_name>/', views.detail, name='detail'),
 ]

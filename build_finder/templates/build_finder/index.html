@@ -1,20 +1,65 @@
-{% load static %}
-
-<link rel="stylesheet" type="text/css" href="{% static 'build_finder/style.css' %}">
-
 <!DOCTYPE html>
+
+<style>
+
+input {
+  font-family: arial, sans-serif;
+  width: 99%;
+  padding: 2px;
+  margin-bottom: 2px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+</style>
+
 <html>
   <head>
     <meta charset="utf-8">
     <title>Build Finder Index Page</title>
   </head>
   <body>
+    <h1>FtA Deck_Building Decks</h1>
+    
+    <form action="{% url 'build_finder:index' %}" method="get">
+      <input name="n" type="text" placeholder="Search for decks with name...">
+    </form>
+    <form action="{% url 'build_finder:index' %}" method="get">
+      <input name="a" type="text" placeholder="Search for decks created by...">
+    </form>
+    <form action="{% url 'build_finder:index' %}" method="get">
+      <input name="c" type="text" placeholder="Search for decks containing card...">
+    </form>
+
     {% if latest_decks_list %}
-        <ul>
+        <table ="10px">
+            <tr>
+                <th>Deck Name</th>
+                <th>Deck Author</th>
+                <th>Deck Description</th>
+            </tr>
         {% for deck in latest_decks_list %}
-            <li><a href="{% url 'build_finder:detail' deck.id %}">{{ deck.deck_name }}</a></li>
+            <tr>
+                <td><a href="{% url 'build_finder:detail' deck.deck_name %}">{{ deck.deck_name }}</a></td>
+                <td>{{ deck.deck_author }}</td>
+                <td>{{ deck.deck_description }}</td>
+            </tr>
         {% endfor %}
-        </ul>
+        </table>
     {% else %}
         <p>No decks are available.</p>
     {% endif %}

@@ -23,21 +23,25 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'ym$vznjaktqtys#rqj)7snrat3cy@&cfnmugkh#!c5v(=fouk-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['https://ftamtgpq.pythonanywhere.com/']
+ALLOWED_HOSTS = ['https://ftamtgpq.pythonanywhere.com/',
+                 '127.0.0.1']
 
 
 # Application definition
 
 INSTALLED_APPS = [
     'build_finder.apps.BuildFinderConfig',
+    'find_deck.apps.FindDeckConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
@@ -48,7 +52,11 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
 ]
+
+CORS_ORIGIN_ALLOW_ALL = True
 
 ROOT_URLCONF = 'fta_deck_building.urls'
 
@@ -117,5 +125,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
+
+STATIC_ROOT = '/home/ftamtgpq/fta_deck_building/static'
 
 STATIC_URL = '/static/'

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    .column {
+      float: left;
+      width: 50%;
+      padding: 1px;
+    }
+    
+    /* Clearfix (clear floats) */
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    </style>
+    <meta charset="utf-8">
+
+    <meta property="og:site_name" content="{{ deck.deck_name }}" />
+	<meta property="og:description" content="{{ deck.deck_description }}" />
+	<meta property="og:url" content="https://ftamtgpq.pythonanywhere.com/build_finder/" />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="https://i.imgur.com/3GV5c3m.png" />    
+
+    <title>Build Finder Search Page</title>
+  </head>
+  <body>
+    <form action="{% url 'build_finder:mtgpq_deck_search' %}" method="get">
+      <input name="n" type="text" placeholder="Search for decks with name...">
+    </form>
+
+        <h1>{{ deck.deck_name }}</h1>
+        <p>By: {{ deck.deck_author }}</p>
+        <p>Description: {{ deck.deck_description }}</p>
+        <p>PlanesWalker: {{ deck.deck_PW }}</p>
+        <p>MTGPQ Version: {{ deck.game_version }}</p>
+        <p>Gameplay Video Link: <a href={{ deck.deck_video_link }}>{{ deck.deck_video_link }}</a></p>
+        <div class="row" style="max-width:500px">
+        {% for card in cards %}
+            <div class="column"><img src="{{ card.card_image }}" style="width:100%"></div>
+        {% endfor %}
+        </div>  
+  
+  </body>
+</html>

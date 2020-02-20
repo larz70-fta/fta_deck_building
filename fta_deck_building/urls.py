@@ -18,5 +18,6 @@ from django.urls import include, path
 
 urlpatterns = [
     path('build_finder/', include('build_finder.urls')),
+    path('find_deck/', include('find_deck.urls')),
     path('admin/', admin.site.urls),
 ]
