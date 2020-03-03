@@ -25,8 +25,8 @@ SECRET_KEY = 'ym$vznjaktqtys#rqj)7snrat3cy@&cfnmugkh#!c5v(=fouk-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://ftamtgpq.pythonanywhere.com/',
-                 '127.0.0.1']
+ALLOWED_HOSTS = ['ftamtgpq.pythonanywhere.com']
+                 #'127.0.0.1']
 
 
 # Application definition
@@ -42,7 +42,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'corsheaders',
+    'slack_utils',
 ]
+
+SLACK_SIGNING_SECRET = 'bf3805084a64f99ecb0121cce2729045'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -56,7 +59,7 @@ MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware',
 ]
 
-CORS_ORIGIN_ALLOW_ALL = True
+#CORS_ORIGIN_ALLOW_ALL = True
 
 ROOT_URLCONF = 'fta_deck_building.urls'
 

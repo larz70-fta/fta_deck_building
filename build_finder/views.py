@@ -12,7 +12,6 @@ from .models import Deck
 from .models import Cards
 
 from django.db.models import Q
-import pandas as pd
 
 
 def index(request):

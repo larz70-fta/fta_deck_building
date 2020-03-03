@@ -60,3 +60,4 @@ class Deck(models.Model):
     
     def recent_decks(self):
         return self.create_date >= timezone.now() - datetime.timedelta(days = 7)
+
