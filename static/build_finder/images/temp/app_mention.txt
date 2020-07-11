@@ -1,0 +1,8 @@
+Event data follows:
+{'client_msg_id': 'f21b5594-702a-4645-9dfa-0c056993edc7', 'text': '<!here>A reminder that <#CTCETFW6S|challenge_rules_and_decks> current challenge is decks of thos format.  Please post your decks you used that worked work over there so Condensed listing of them.  From there, maybe we can input more of them into <@UTXGRH21Y>', 'user': 'U9NFJAHRR', 'ts': '1592843221.140400', 'team': 'T2VS9MU5S', 'edited': {'user': 'U9NFJAHRR', 'ts': '1594041995.000000'}, 'blocks': [{'type': 'rich_text', 'block_id': '3Hi', 'elements': [{'type': 'rich_text_section', 'elements': [{'type': 'broadcast', 'range': 'here'}, {'type': 'text', 'text': 'A reminder that '}, {'type': 'channel', 'channel_id': 'CTCETFW6S'}, {'type': 'text', 'text': ' current challenge is decks of thos format.  Please post your decks you used that worked work over there so Condensed listing of them.  From there, maybe we can input more of them into '}, {'type': 'user', 'user_id': 'UTXGRH21Y'}]}]}], 'channel': 'C011B2GLXMM', 'event_ts': '1592843221.140400'}
+token == pDkBmuTH8syvAxKxBNUz2aZx
+team_id == T2VS9MU5S
+api_app_id == AU96JSJUC
+event_id == Ev016Z0ZLH41
+event_time == 1592843221
+authed_users == ['UTXGRH21Y']

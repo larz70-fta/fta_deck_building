@@ -1,0 +1,11 @@
+token == pDkBmuTH8syvAxKxBNUz2aZx
+team_id == T2VS9MU5S
+team_domain == mtgfta
+enterprise_id == 
+enterprise_name == 
+channel_id == C2VS9MUSG
+channel_name == fta_general
+user_id == U014880D2LC
+user_name == torbar
+response_url == https://hooks.slack.com/commands/T2VS9MU5S/1234386362946/gQNAxvF3IqW95XFm1xnY7KHW
+trigger_id == 1258222263184.97893742196.6240472d0af696fcb95d7bfd7c171bbd

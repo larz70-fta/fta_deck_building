@@ -1,0 +1,6 @@
+EO
+
+
+Event: Emergency Ordinances - 3 nodes, 3 initial charge(s), 5 max, 8-hour refresh 
+
+174Event: Emergency Ordinances - 3 nodes, 3 initial charge(s), 5 max, 8-hour refresh 

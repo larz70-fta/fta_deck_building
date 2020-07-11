@@ -1,0 +1,20 @@
+shrek game scores: 
+ ```event event_date   vote player_name event_type  score 
+ RAW   2020-06-14  2.0   shrek       PVP-S      0.8333
+ RAW   2020-04-05  2.0   shrek       PVP-S      0.8125
+ RAW   2020-03-22  2.0   shrek       PVP-S      0.6958
+ RAW   2020-03-01  2.0   shrek       PVP-S      0.7333
+ RAW   2020-02-02  2.0   shrek       PVP-S      0.9167```
+Rank of shrek and 10 other players near him who voted  and played in at least 1 event(s) of the last 5 RAW  events.
+```     Rank Player_Name           Average   Events 
+       51 niigin                 0.8250%     1 
+       52 powernic               0.8153%     3 
+       53 morgoth                0.8125%     2 
+       54 paleale                0.8000%     5 
+***    55 shrek                  0.7983%     5  *** 
+       56 fatman                 0.7958%     1 
+       57 tamiyo                 0.7833%     1 
+       58 khaalis                0.7750%     5 
+       59 torbar                 0.7583%     1 
+       60 analconda              0.7175%     5 
+```

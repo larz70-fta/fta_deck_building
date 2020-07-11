@@ -1,0 +1,8 @@
+Event data follows:
+{'client_msg_id': '7fe3c46c-472d-450b-afc3-63ebc92fba22', 'text': 'And this has happened to me with mps, with mythics and also with tons of rares.\n\nI did not track the uncommon and common data, but to me it seems the odda are not changing at all.\nAnd the shown percentage rates pretty much represent the real odds, too.', 'user': 'U60LX04CE', 'ts': '1584134505.499400', 'team': 'T2VS9MU5S', 'blocks': [{'type': 'rich_text', 'block_id': '0mr', 'elements': [{'type': 'rich_text_section', 'elements': [{'type': 'text', 'text': 'And this has happened to me with mps, with mythics and also with tons of rares.\n\nI did not track the uncommon and common data, but to me it seems the odda are not changing at all.\nAnd the shown percentage rates pretty much represent the real odds, too.'}]}]}], 'thread_ts': '1584133324.484700', 'parent_user_id': 'U60LX04CE', 'channel': 'C3G4TPDLK', 'event_ts': '1584134505.499400', 'channel_type': 'channel'}
+token == pDkBmuTH8syvAxKxBNUz2aZx
+team_id == T2VS9MU5S
+api_app_id == AU96JSJUC
+event_id == EvV2ARFPB5
+event_time == 1584134505
+authed_users == ['UTXGRH21Y']

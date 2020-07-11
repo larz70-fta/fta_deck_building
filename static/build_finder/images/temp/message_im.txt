@@ -1,0 +1,9 @@
+Event data follows:
+{'client_msg_id': '83f8a7fa-0f18-47d6-875a-eaf0e289f810', 'text': 'More testing', 'user': 'UAA182308', 'ts': '1587623008.002200', 'team': 'T2VS9MU5S', 'blocks': [{'type': 'rich_text', 'block_id': 'yjt+V', 'elements': [{'type': 'rich_text_section', 'elements': [{'type': 'text', 'text': 'More testing'}]}]}], 'channel': 'DV5UU4Z32', 'event_ts': '1587623008.002200', 'channel_type': 'im'}
+Kwargs data follows
+token == pDkBmuTH8syvAxKxBNUz2aZx
+team_id == T2VS9MU5S
+api_app_id == AU96JSJUC
+event_id == Ev012BCC7Y1K
+event_time == 1587623008
+authed_users == ['UTXGRH21Y']

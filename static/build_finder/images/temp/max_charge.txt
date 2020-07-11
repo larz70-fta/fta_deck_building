@@ -1,0 +1,11 @@
+EO
+
+
+Event: Emergency Ordinances - 3 nodes, 3 initial charge(s), 5 max, 8-hour refresh 
+
+174
+Event: Emergency Ordinances - 3 nodes, 3 initial charge(s), 5 max, 8-hour refresh 
+ Time to start: 0 day(s) 6 hour(s) and 56 minute(s) 
+ Time to max charge: 0 day(s) 22 hour(s) and 56 minute(s) 
+ Time to end of event: 2 day(s) 4 hour(s) and 56 minute(s) 
+

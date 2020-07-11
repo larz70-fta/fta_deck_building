@@ -1,0 +1,8 @@
+Event data follows:
+{'user': 'U9NFJAHRR', 'item': {'type': 'message', 'channel': 'CKFHKHYUB', 'ts': '1594425863.310300'}, 'reaction': 'thankyou', 'item_user': 'UAA182308', 'event_ts': '1594431564.310400'}
+token == pDkBmuTH8syvAxKxBNUz2aZx
+team_id == T2VS9MU5S
+api_app_id == AU96JSJUC
+event_id == Ev016GQSL971
+event_time == 1594431564
+authed_users == ['UTXGRH21Y']

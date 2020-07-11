@@ -1,0 +1,6 @@
+Full filename is: fta_deck_building//static//build_finder//images//full/11100.png 
+Full image file does not exist. 
+Card image url is: https://ftamtgpq.pythonanywhere.com//static/build_finder/images/11100.png 
+Full filename is: fta_deck_building//static//build_finder//images//full/19166.png 
+Full image file does not exist. 
+Card image url is: https://ftamtgpq.pythonanywhere.com//static/build_finder/images/19166.png 
