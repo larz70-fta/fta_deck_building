@@ -29,7 +29,7 @@ class Cards(models.Model):
 class Deck(models.Model):
     deck_name = models.CharField(max_length=50)
     deck_author = models.CharField(max_length=50)
-    create_date = models.DateTimeField(default=timezone.now())
+    create_date = models.DateTimeField(default=timezone.now)
     game_version = models.CharField(max_length=10, default="1.0")
     deck_description = models.CharField(max_length=500)
     deck_PW = models.CharField(max_length=100, default="All")
@@ -61,3 +61,18 @@ class Deck(models.Model):
     def recent_decks(self):
         return self.create_date >= timezone.now() - datetime.timedelta(days = 7)
 
+class Combo(models.Model):
+    card = models.ForeignKey(Cards, on_delete=models.CASCADE,
+                             related_name="%(app_label)s_%(class)s_card")
+    added_by = models.CharField(max_length=50, null = True)
+    create_date = models.DateTimeField(default=timezone.now)
+    combo_description = models.CharField(max_length=500, null = True)
+    combo_card1 = models.ForeignKey(Cards, on_delete=models.CASCADE,
+                             related_name="%(app_label)s_%(class)s_card1")
+    combo_card2 = models.ForeignKey(Cards, on_delete=models.CASCADE,
+                             related_name="%(app_label)s_%(class)s_card2", null = True)
+    combo_card3 = models.ForeignKey(Cards, on_delete=models.CASCADE,
+                             related_name="%(app_label)s_%(class)s_card3", null = True)
+    def __str__(self):
+        return self.card.card_name
+    
